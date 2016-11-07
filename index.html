@@ -6,17 +6,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&lang=en">
 
 <style type="text/css">
-
 html{
   -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke: 1px rgba(0,0,0,0.1)
+  -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+  height: 100%;
 }
 body {
 	font-family: 'Roboto',sans-serif;
 	color: #343434;
+  margin-bottom: 0px;
+  height: 100%;
 }
-
-
 .container{
 	margin-right: auto;
 	margin-left: auto;
@@ -39,11 +39,52 @@ body {
   }
 }
 
+
+.cv-section{
+
+}
+.cv-section{
+	margin-top: 60px;
+}
+
+.cv-section > h2{
+	font-weight: normal;
+}
+
+.cv-section > h3{
+	font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.cv-work > h4{
+
+}
+
+
+.cv-work-jobtitle{
+	margin-bottom: 4px;
+}
+
+.cv-work-joblocation{
+	font-style: italic;
+	margin-bottom: 4px;
+	color: #434649;
+}
+
+.cv-work-daterange{
+	font-size: 13px;
+    color: #66696a;
+}
+    
+
+
+
+
 .cv-name{
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 400;
-
 	border-bottom: solid 1px #CCC;
 	display: table;
     margin: 20px auto;
@@ -51,10 +92,7 @@ body {
     padding-left: 60px;
     padding-right: 60px;
 }
-
-
 .links-group{
-	margin-top: 50px;
 	text-align: center;
 }
 .links-group a{
@@ -72,17 +110,9 @@ body {
 	text-decoration: none;
 	color: #041024;
 }
-
-
-
 .code-text p{
 	padding-left: 30px;
 }
-
-
-
-
-
 kbd{
 	display: table;
     background-color: #4E4D4D;
@@ -90,74 +120,193 @@ kbd{
     border-radius: 2px;
     font-size: 100%;
     font-weight: 700;
-
     padding: 3px;
     margin: 3px;
 }
 
+.cv-work{
+	padding-left: 19px;
+}
+.cv-work-jobtitle{
+	display: inline-block;
+}
+.cv-work-joblocation{
+	display: block;
+}
+.cv-work-daterange{
+	display: block;
+}
+
+
+
+
+.cv-work-ti-list{
+	max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+    
+
+.cv-work-ti-list > kbd{
+	display: inline-block;
+}
+
+.cv-work-description > ul > li{
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+.wrapper{
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -70px;
+}
+.footer{
+    margin-right: -10px;
+    margin-left: -8px;
+    
+    padding: 5px;
+    
+    height: 70px; 
+    clear: both;
+}
+.push{
+  height: 70px; 
+  clear: both;
+}
 </style>
 
 </head>
 <body>
+<div class="wrapper">
+
+		<h1 class="cv-name">Dmitry Kvochkin</h1>
+
+	<div class="container">
+	
 
 
-<h1 class="cv-name">Dmitry Kvochkin</h1>
+		<p style="text-align: center;">
+			Hi, i am Full Stack Developer and i solve <strong>business problems</strong>, with <strong>code</strong>.
+		</p>
 
-<div class="container">
+		<div class="links-group">
+	
+			<a href="https://github.com/dmitrykvochkin" target="_blank">GitHub<a/>
+	
+			<a href="https://pt.linkedin.com/in/dmitry-kvochkin-5b8aab97" target="_blank">LinkedIn<a/>
+	
+			<a href="mailto:contactdmitryk@gmail.com" target="_top">Contact</a>
+
+		</div>
 
 
 
-	<p>
-		Hi, i am Full Stack Developer, currently living in Lisbon, Portugal.
-	</p>
 
+		<div class="cv-section">
+			<h3>Work Experience</h3>
+			
+			<div class="cv-work">
+				<h4 class="cv-work-jobtitle">Full-Stack Developer</h4>
+				<span class="cv-work-joblocation">TradingEconomics</span>
+				<span class="cv-work-daterange">February 2014 – November 2016</span>
+				<div class="cv-work-description">
+					<span></span>
+					<ul>
+						<li>
+Defined technologies and resources to be used on future projects. 
+						</li>
+						<li>
+Modelled and stored data in SQL and NoSQL databases.
+						</li>
+						<li>
+Designed and build the entire back-end RESTful API.
+						</li>
+						<li>
+Implemented OAuth2 and Throttling mechanisms.
+						</li>
+						<li>
+Designed and developed user interfaces.
+						</li>
+						<li>
+Designed and build data visualization module on top of highcharts.js.
+						</li>
+						<li>
+Worked with server side page rendering using PhantomJs.
+						</li>
+						<li>
+Server setup and deployment.
+						</li>
+						<li style="list-style: none;">
+							<div class="cv-work-ti-list">
+								<kbd>C#</kbd> <kbd>SQL</kbd> <kbd>NodeJs</kbd>
+								<kbd>MongoDB</kbd> <kbd>Redis</kbd> <kbd>JavaScript</kbd>
+								<kbd>HTML</kbd> <kbd>CSS</kbd>  <kbd>Grunt</kbd>
+								<kbd>GitHub</kbd> <kbd>PhantomJS</kbd> <kbd>Highcharts</kbd>
+								<kbd>AWS</kbd> <kbd>Nginx</kbd>
+							</div>	
+						</li>
 
-	<div class="code-text">
-		<kbd>while(working){</kbd>
-			<div style="padding-left: 15px;">
-				<kbd>if(project == 1){</kbd>
-					<p>
-						Planning, designing and developing RESTfull API service, using:
-						ASP.NET WEB API(C#), SQL Server, redis.
-						Implementation of OAuth2 authentication and a throttling system.
-					</p>
-				<kbd>}else if(project == 2){</kbd>
-					<p>
-						Planning, designing and developing a data visualization module on top of big data (MongoDB, Redis) using NodeJS as API endpoint and javascript/svg (highstock.js) on front-end, for charting
-					</p>
-				<kbd>}else if(project == 3){</kbd>
-					<p>
-						
-					</p>
-				<kbd>}else{</kbd>
-					<p>
-
-					</p>
-				<kbd>} </kbd>
+					</ul>
+				</div>
 			</div>
-		<kbd>}</kbd>
+
+			<div class="cv-work">
+				<h4 class="cv-work-jobtitle">Trainee</h4>
+				<span class="cv-work-daterange">2013 – August 2013 (7 months)</span>
+				<div class="cv-work-description">
+
+					<ul>
+						<li>Participated in Full-Stack development of an eCommerce website.</li>
+						<li>Implemented PayPal API payment module.</li>
+						<li>Developed backend services to be integrated into existing UI.</li>
+						<li style="list-style: none;">
+							<div class="cv-work-ti-list">
+								<kbd>PHP</kbd> <kbd>MySql</kbd> <kbd>JavaScript</kbd>
+								<kbd>HTML</kbd> <kbd>CSS</kbd> 
+								<kbd>Paypal API</kbd>
+							</div>	
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+
+
+
+		<div class="cv-section">
+			<h3>Education</h3>
+			<div class="cv-work">
+				<h4 class="cv-work-jobtitle">
+					Bachelor's degree, Computer Science Engineering
+				</h4>
+				<span class="cv-work-joblocation">Coimbra Institute of Engineering</span>
+				<span class="cv-work-daterange">2010 – 2013</span>
+			</div>
+		</div>
+
+
+
+		
+
+
+
+		
 	</div>
 
 
 
 
-
-	<div class="links-group">
-
-		<a href="https://github.com/dmitrykvochkin" target="_blank">GitHub<a/>
-
-		<a href="https://pt.linkedin.com/in/dmitry-kvochkin-5b8aab97" target="_blank">LinkedIn<a/>
-
-		<a href="mailto:contactdmitryk@gmail.com" target="_top">Contact</a>
-
-
-	</div>
-
-
-
-
-</div>
-
+<br><br><br><br>
 
 
 </body>
